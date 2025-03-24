@@ -30,4 +30,14 @@ jobs:
     - name: Build with Maven 3.9
       run: mvn clean install
 
+    - name: Build & push Docker image
+      uses: mr-smithers-excellent/docker-build-push@v6
+      with:
+        image: winzawoo/github_action
+        tags: latest
+        registry: registry-url.io
+        dockerfile: Dockerfile
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
     

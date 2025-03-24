@@ -49,7 +49,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>devops-github-action</finalName>
+		<finalName>github_action</finalName>
 	</build>
 
 </project>
