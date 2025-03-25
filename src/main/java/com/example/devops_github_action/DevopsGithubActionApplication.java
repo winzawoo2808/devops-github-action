@@ -17,4 +17,9 @@ public class DevopsGithubActionApplication {
 	public String hello(){
 		return "Welcome to Github Actions";
 	}
+
+	@RequestMapping("/create")
+	public String create(){
+		return "Successfully created";
+	}
 }
